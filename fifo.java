@@ -1,6 +1,5 @@
-import java.util.Scanner;
 import java.util.*;
-import java.util.HashMap;
+
 public class fifo {
 	static Scanner scanner = new Scanner(System.in);
 
@@ -48,7 +47,7 @@ public class fifo {
 	public static void main(String[] args) {
 		int capacity, n, pages[];
 		// int pages[] = {7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};
-		FI FOfifo = new FIFO();
+		fifo fifoo = new fifo();
 
 		System.out.print("Enter capacity of page frame: ");	
 		capacity = scanner.nextInt();
@@ -63,7 +62,7 @@ public class fifo {
 			pages[i] = scanner.nextInt();
 		}
 
-		fifo.FIFOImplementation(pages, capacity);
+		fifoo.FIFOImplementation(pages, capacity);
 
 	}	
 }
